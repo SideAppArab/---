@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زيادة متابعين تيك توك - أرخص وأسرع خدمة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body { background: #0a0a0a; color: #fff; }
+        .glow { text-shadow: 0 0 25px #00ff9d; }
+        .card { transition: all 0.3s; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 0 30px rgba(0,255,157,0.3); }
+    </style>
+</head>
+<body>
+    <nav class="bg-black border-b border-green-500 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-green-500 glow">TikBoost</h1>
+            <div class="flex gap-8 text-lg">
+                <a href="#" class="hover:text-green-400">الرئيسية</a>
+                <a href="#services" class="hover:text-green-400">الخدمات</a>
+                <a href="#orders" class="hover:text-green-400">اطلب الآن</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center py-32 bg-gradient-to-b from-black to-zinc-950">
+        <h1 class="text-6xl md:text-7xl font-black glow">زيادة متابعين تيك توك حقيقيين</h1>
+        <p class="text-2xl mt-6 text-gray-300">مشاهدات • لايكات • كومنتات • شيرز • في دقايق</p>
+        <div class="mt-10 flex justify-center gap-6">
+            <div class="bg-green-500 text-black px-10 py-4 rounded-2xl text-2xl font-bold">+1.2M متابع تم تسليمهم اليوم</div>
+        </div>
+    </header>
+
+    <section id="services" class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center mb-12">اختر الباقة المناسبة</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="card bg-zinc-900 p-8 rounded-3xl border border-green-500">
+                <h3 class="text-3xl font-bold mb-4">متابعين تيك توك</h3>
+                <div class="text-5xl font-black text-green-400">5000</div>
+                <div class="text-2xl mb-6">متابع</div>
+                <ul class="space-y-3 mb-8">
+                    <li>✓ متابعين عرب وحقيقيين</li>
+                    <li>✓ زيادة تدريجية</li>
+                    <li>✓ ضمان 30 يوم</li>
+                </ul>
+                <div class="text-4xl font-bold mb-6">49$</div>
+                <button onclick="order('5000 متابع - 49$')" class="w-full bg-green-500 hover:bg-green-600 py-4 rounded-2xl text-xl font-bold">اطلب الآن</button>
+            </div>
+
+            <div class="card bg-zinc-900 p-8 rounded-3xl border-2 border-yellow-400 scale-110">
+                <div class="text-yellow-400 text-center mb-2 font-bold">الأكثر مبيعاً 🔥</div>
+                <h3 class="text-3xl font-bold mb-4">مشاهدات + متابعين</h3>
+                <div class="text-5xl font-black text-green-400">100K</div>
+                <div class="text-2xl mb-6">مشاهدة + 10K متابع</div>
+                <ul class="space-y-3 mb-8">
+                    <li>✓ مشاهدات فورية</li>
+                    <li>✓ متابعين نشطين</li>
+                    <li>✓ 24/7 دعم</li>
+                </ul>
+                <div class="text-4xl font-bold mb-6">89$</div>
+                <button onclick="order('100K مشاهدة + 10K متابع - 89$')" class="w-full bg-yellow-500 hover:bg-yellow-600 py-4 rounded-2xl text-xl font-bold text-black">اطلب الآن</button>
+            </div>
+
+            <div class="card bg-zinc-900 p-8 rounded-3xl border border-green-500">
+                <h3 class="text-3xl font-bold mb-4">لايكات + كومنتات</h3>
+                <div class="text-5xl font-black text-green-400">50K</div>
+                <div class="text-2xl mb-6">لايك + 1000 كومنت</div>
+                <ul class="space-y-3 mb-8">
+                    <li>✓ كومنتات مخصصة</li>
+                    <li>✓ لايكات عالمية</li>
+                    <li>✓ سرعة فائقة</li>
+                </ul>
+                <div class="text-4xl font-bold mb-6">35$</div>
+                <button onclick="order('50K لايك + 1000 كومنت - 35$')" class="w-full bg-green-500 hover:bg-green-600 py-4 rounded-2xl text-xl font-bold">اطلب الآن</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="orders" class="bg-zinc-950 py-20">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-10">اطلب الآن</h2>
+            <form class="space-y-6 bg-zinc-900 p-10 rounded-3xl">
+                <input type="text" id="username" placeholder="رابط حسابك أو @username" class="w-full bg-black p-5 rounded-2xl text-lg">
+                <input type="text" id="service" placeholder="نوع الخدمة (مثال: 10K متابع)" class="w-full bg-black p-5 rounded-2xl text-lg">
+                <input type="text" id="payment" placeholder="طريقة الدفع (USDT - BTC - PayPal)" class="w-full bg-black p-5 rounded-2xl text-lg">
+                <button type="button" onclick="submitOrder()" class="w-full bg-green-500 hover:bg-green-600 py-6 text-2xl font-bold rounded-3xl">ادفع واستلم فوراً</button>
+            </form>
+            <p class="text-center text-green-400 mt-6">✅ بعد الدفع يتم التسليم خلال 5-30 دقيقة</p>
+        </div>
+    </section>
+
+    <footer class="text-center py-12 text-gray-500">
+        © 2026 TikBoost - كل الحقوق محفوظة | دعم 24/7
+    </footer>
+
+    <script>
+        function order(pkg) {
+            document.getElementById('service').value = pkg;
+            document.getElementById('orders').scrollIntoView({ behavior: 'smooth' });
+        }
+        function submitOrder() {
+            const user = document.getElementById('username').value;
+            alert(`✅ تم استلام طلبك!
+
+الحساب: ${user}
+سيتم التسليم خلال دقايق
+
+شكراً لثقتك في TikBoost`);
+        }
+    </script>
+</body>
+</html>
